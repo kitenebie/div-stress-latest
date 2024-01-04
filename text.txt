@@ -1,0 +1,69 @@
+$id = $row['id'];
+                echo "<tr>";
+                $reversedOriginalTrackingNumber = strrev($row['tracking_number']);
+                $modifiedTrackingNumber = strtr($reversedOriginalTrackingNumber, $reverseSymbolMapping);
+                echo "<td id='td'>" . $modifiedTrackingNumber . "</td>";
+                echo "<td id='td'>" . $row['details'] . "</td>";
+                echo "<td id='td'>" . $row['posted_date'] . "</td>";
+                echo "<td id='td'>";
+        if (!empty($row['check1'])) {
+            echo $row['check1'] . '(' . $row['check1quantity'] . ' copy' . ')';
+        }
+        echo "</td>";
+        echo "<td id='td'>" . $row['check1status'] . "</td>";
+        echo "<td id='td'>";
+        if (!empty($row['check2'])) {
+            echo $row['check2'] . '(' . $row['check2quantity'] . ' copy' . ')';
+        }
+        echo "</td>";
+        echo "<td id='td'>" . $row['check2status'] . "</td>";
+        echo "<td id='td'>";
+        if (!empty($row['check3'])) {
+            echo $row['check3'] . '(' . $row['check3quantity'] . ' copy' . ')';
+        }
+        echo "</td>";
+        echo "<td id='td'>" . $row['check3status'] . "</td>";
+        echo "<td id='td'>";
+        if (!empty($row['check4'])) {
+            echo $row['check4'] . '(' . $row['check4quantity'] . ' copy' . ')';
+        }
+        echo "</td>";
+        echo "<td id='td'>" . $row['check4status'] . "</td>";
+        echo "<td id='td'>";
+        if (!empty($row['check5'])) {
+            echo $row['check5'] . '(' . $row['check5quantity'] . ' copy' . ')';
+        }
+        echo "</td>";
+        echo "<td id='td'>" . $row['check5status'] . "</td>";
+        echo "<td id='td'>";
+        if (!empty($row['check6'])) {
+            echo $row['check6'] . '(' . $row['check6quantity'] . ' copy' . ')';
+        }
+        echo "</td>";
+        echo "<td id='td'>" . $row['check6status'] . "</td>";
+        echo "<td id='td'>";
+        if (!empty($row['check7'])) {
+            echo $row['check7'] . '(' . $row['check7quantity'] . ' copy' . ')';
+        }
+        echo "</td>";
+        echo "<td id='td'>" . $row['check7status'] . "</td>";
+        echo "<td id='td'>";
+        if (!empty($row['check8'])) {
+            echo $row['check8'] . '(' . $row['check8quantity'] . ' copy' . ')';
+        }
+        echo "</td>";
+        echo "<td id='td'>" . $row['check8status'] . "</td>";
+        echo "<td id='td'>";
+        if (!empty($row['check9'])) {
+            echo $row['check9'] . '(' . $row['check9quantity'] . ' copy' . ')';
+        }
+        echo "</td>";
+        echo "<td id='td'>" . $row['check9status'] . "</td>";
+                echo "<td id='td'>" . $row['status'] . "</td>";?>
+              <td id='td'><a href="done.php?done=<?php echo $id; ?>" id="cancelled">Cancel</a></td>
+          <?php      echo "</tr>";
+            }
+        } else {
+            echo "<tr><td colspan='7'>(No Result Found!)</td></tr>";
+        }
+        

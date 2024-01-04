@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper{
+    border: 1px solid transparent;
+    padding: 1;
+    width: 80%;
+    margin: 0 auto;
+}
+.footer{
+    background-color: #ff4757;
+    color: white;
+}
+.menu ul{
+    list-style: none;
+}
+.menu ul li{
+    display: inline;
+    padding: 1%;
+}
+
+.text-center{
+    text-align: center;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.menu ul li a:hover{
+    background-color: transparent !important;
+    color: #ff4757 !important;
+    border-bottom: 1px solid red !important;
+}
+.menu{
+    border-bottom: 1px solid black;
+    padding-top: 40px;
+    padding-bottom:12px ;
+}
+.main-content{
+    margin: 1% 0;
+    background-color: #f1f2f6;
+    padding: 3% 0;
+}
+.box{
+    width: 18%;
+    background-color: white;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+}
+.tbl_full{
+    width: 100%;
+}
+table tr th{
+    border-bottom: 1px solid black;
+    padding: 1%;
+    text-align: left;
+}
+table tr td{
+    padding: 1%;
+}
+.btnadd{
+    background-color: blue;
+    padding: 0.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+.btnupdate button{
+    background-color: skyblue;
+    padding: 0.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.btndelete button{
+    background-color: #ff6b81;
+    padding: 0.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.tbladd{
+    width: 30%;
+}
+.btnadd{
+    background-color: transparent;
+    padding: 0.5%;
+    width: max-content;
+    height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.td-back{
+  float:right;
+  cursor: pointer;
+}
+.btnadd:hover{
+    background-color: skyblue;
+    padding: 0.5%;
+    width: max-content;
+    height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
